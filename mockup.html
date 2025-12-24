@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Veterinary Telehealth </title>
+    <link rel = "stylesheet" href = "mockup.css">
+</head>
+
+<body> 
+    <div class = front>
+        <h1> TELEVET HEALTH </h1>
+        <br> <br> <br>
+        <form action = "/submit-page" method = "POST">
+        <div class = "radiob">
+            <input id = "login" name = "form_type" type = "radio" value = "login" checked onchange = "toggleForm()"/>
+            <label class = "option" for = "login"> LOGIN </label>
+
+            <input id = "register" name = "form_type" type = "radio" value = "register" onchange = "toggleForm()"/>
+            <label class = "option" for = "register"> REGISTER </label>
+
+            <span class = "bgbutton"> </span>
+        </div>
+        <br> <br> <br> <br>
+        <div id = "login-page">
+            <label for = "email"> </label>
+            <input type = "text" id = "email" name = "email" value = "E-MAIL"> <br> <br>
+            <label for = "pass"> </label>
+            <input type = "text" id = "pass" name = "pass" value = "PASSWORD"> <br> <br>
+            <button type = "submit" formaction = "/action_page2.php"> ENTER </button>
+
+        <div id = "register-page">
+            <label for = "email"> </label>
+            <input type = "text" id = "email" name = "email" value = "E-MAIL"> <br> <br>
+            <label for = "pass"> </label>
+            <input type = "text" id = "pass" name = "pass" value = "PASSWORD"> <br> <br>
+            <button type = "submit" formaction = "/action_page2.php"> REGISTER </button>
+        </form>
+        </div>
+        </form>
+    </div>
+
+    <script src = "mockup.js"> </script>
+</body>
+
+</html>

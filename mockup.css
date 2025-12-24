@@ -1,0 +1,136 @@
+body {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #f4ba7d;
+    font-family: fantasy;
+    font-size: 70px;
+}
+
+.front {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.radiob {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  width: 400px;
+  overflow: hidden;
+  font-family: verdana;
+}
+
+.radiob input {
+  display: none;
+}
+
+.radiob label {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.radiob .bgbutton {
+  position: absolute;
+  width: 49%;
+  height: 38px;
+  background-color: #f4ba7d;
+  top: 4px;
+  left: 4px;
+  border-radius: 30px;
+  transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#register:checked ~ .bgbutton {
+  left: 50%;
+}
+#login:checked + label[for = "login"] {
+  color: #7b4105;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+#register:checked + label[for = "register"] {
+  color: #7b4105;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+#login:not(:checked) + label[for = "login"],
+#register:not(:checked) + label[for = "register"] {
+  color: #f4ba7d;
+  font-weight: bold;
+}
+
+#email {
+  width: 45%;
+  height: 40px;
+  padding: 0 5rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  color: gray;
+}
+
+#pass {
+  width: 45%;
+  height: 40px;
+  padding: 0 5rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  color: gray;
+}
+
+button {
+ border: 2px solid white;
+ border-radius: 75px;
+ box-sizing: border-box;
+ color: white;
+ background-color: transparent;
+ cursor: pointer;
+ display: inline-block;
+ line-height: normal;
+ margin: 0;
+ min-width: 0;
+ outline: none;
+ padding: 1em 2.3em;
+ text-align: center;
+ text-decoration: none;
+ transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ font-weight: 500;
+}
+
+button:disabled {
+ pointer-events: none;
+}
+
+button:hover {
+ color: #fff;
+ background-color: #1A1A1A;
+ box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ transform: translateY(-2px);
+}
+
+button:active {
+ box-shadow: none;
+ transform: translateY(0);
+}
