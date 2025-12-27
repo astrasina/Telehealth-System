@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Coiny;
+    text-align: center;
+    color: #f4ba7d;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: rgb(128, 122, 42) 2px 3px 30px;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 0%;
+}
+
+hr.solid {
+  border-top: 3px solid #f4ba7d;
+}
+
+#navbar {
+  background-color: #7b4105;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+#navbara {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  padding: 10px 15px;
+} 
+
+.button-style {
+  text-decoration: none;
+}
+
+#dashboard {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#messages {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#home {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#appointment {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#menu {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 16px;
+  height: 1500px;
+}
+
+h2 {
+    color: white;
+    font-family: cinzel;
+    font-size: 32px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.card {
+  width: 40px;
+  background-color: white;
+  padding: .4em;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 400px;
+  height: 130px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: black;
+  background-color: white;
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-family: arial;
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+table {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.buttons {
+  align-items: center;
+  font-family: gasoek one;
+  font-weight: 500;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 15px 10px 15px 10px;
+  color: black;
+  background: white;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #f4ba7d;
+  letter-spacing: 0.05em;
+  border-radius: 20px;
+}
+
+.buttons:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgb(149, 91, 255);
+}
+
+.buttons:active {
+  box-shadow: 0 0.3em 1em -0.5em rgb(160, 109, 255);
+}

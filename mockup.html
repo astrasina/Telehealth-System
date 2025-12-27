@@ -5,14 +5,15 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title> Veterinary Telehealth </title>
     <link rel = "stylesheet" href = "mockup.css">
+    <link href = 'https://fonts.googleapis.com/css?family=Coiny' rel = 'stylesheet'>
 </head>
 
 <body> 
-    <div class = front>
-        <h1> TELEVET HEALTH </h1>
+    <div class = "front">
+        <h1> Televet Health </h1>
         <br> <br> <br>
         <form action = "/submit-page" method = "POST">
-        <div class = "radiob">
+        <div class = "radiob" id = "radiob">
             <input id = "login" name = "form_type" type = "radio" value = "login" checked onchange = "toggleForm()"/>
             <label class = "option" for = "login"> LOGIN </label>
 
@@ -24,17 +25,19 @@
         <br> <br> <br> <br>
         <div id = "login-page">
             <label for = "email"> </label>
-            <input type = "text" id = "email" name = "email" value = "E-MAIL"> <br> <br>
+            <input type = "text" id = "login_email" name = "login_email" placeholder = "E-MAIL"> <br> <br>
             <label for = "pass"> </label>
-            <input type = "text" id = "pass" name = "pass" value = "PASSWORD"> <br> <br>
-            <button type = "submit" formaction = "/action_page2.php"> ENTER </button>
+            <input type = "password" id = "login_pass" name = "login_pass" placeholder = "PASSWORD"> <br> <br>
+            <button type = "submit" formaction = "/landingpage.html"> ENTER </button>
+        </div>
 
         <div id = "register-page">
             <label for = "email"> </label>
-            <input type = "text" id = "email" name = "email" value = "E-MAIL"> <br> <br>
+            <input type = "text" id = "reg_email" name = "reg_email" placeholder = "E-MAIL"> <br> <br>
             <label for = "pass"> </label>
-            <input type = "text" id = "pass" name = "pass" value = "PASSWORD"> <br> <br>
-            <button type = "submit" formaction = "/action_page2.php"> REGISTER </button>
+            <input type = "password" id = "reg_pass" name = "reg_pass" placeholder = "PASSWORD"> <br> <br>
+            <button type = "submit" formaction = "/mockup.html"> REGISTER </button>
+        </div>
         </form>
         </div>
         </form>
