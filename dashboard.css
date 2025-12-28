@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Coiny;
+    text-align: center;
+    color: #f4ba7d;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: rgb(128, 122, 42) 2px 3px 30px;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 0%;
+}
+
+hr.solid {
+  border-top: 3px solid #f4ba7d;
+}
+
+#navbar {
+  background-color: #7b4105;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+#navbara {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  padding: 10px 15px;
+} 
+
+.button-style {
+  text-decoration: none;
+}
+
+#dashboard {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#messages {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#home {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#appointment {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#menu {
+  background-color: transparent;
+  border: none;
+  color: #f4ba7d;
+  font-size: 20px;
+  cursor: pointer;
+}
