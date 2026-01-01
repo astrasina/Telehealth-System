@@ -6,10 +6,12 @@
     <link rel = "stylesheet" href = "appointment.css">
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
-    <link href = 'https://fonts.googleapis.com/css?family=Coiny' rel = 'stylesheet'>
+    <link href = 'https://fonts.googleapis.com/css?family=Lalezar' rel = 'stylesheet'>
 </head>
 
 <body>
+    <div class = "background"> </div>
+
     <div id = "navbar">
         <h1> Televet Health </h1>
         <hr class = "solid">
@@ -27,34 +29,40 @@
         </div>
     </div>
 
+    <br>
+
     <div id = "appoint">
         <table>
             <td rowspan = "3"> 
                 <td>
-                    <form action = "/action_page.php" method = "get">
                     <label for = "patient_name"> Patient </label>
-                    <input type = "text" id = "patient_name" name = "patient_name"> <br> <br>
+                    <br>
                     <label for = "pet_name"> Pet Name </label>
-                    <input type = "text" id = "pet_name" name = "pet_name"> <br> <br>
+                    <br>
                     <label for = "specie_type"> Specie </label>
-                    <input type = "text" id = "concern" name = "concern"> <br> <br>
-                    <label for = "concern"> Concern: </label>
+                    <br>
+                    <label for = "concern"> Concern </label>
+                </td>
+                <td>
+                    <input type = "text" id = "patient_name" name = "patient_name"> <br> <br>
+                    <input type = "text" id = "pet_name" name = "pet_name"> <br> <br>
+                    <input type = "text" id = "specie_type" name = "specie_type"> <br> <br>
+                    <input type = "text" id = "concern" name = "concern"> 
                 </td>
 
                 <td> 
-                    <form action="/action_page.php">
                         <label for = "schedule"> Schedule: </label>
                         <br>
                         <input type = "date" id = "schedule" name = "birthday">
                         <br> <br> <br>
-                        <button style = "font-size:24px"> Payment <i class = "fa fa-credit-card"> </i> </button>
-                    </form>
+                        <button> Payment <i class = "fa fa-credit-card"> </i> </button>
                 </td>
             </td>
         </table>
 
+        <!-- to edit ^^ need again js here; yung user should be kung ano input nila -->
+
     </div>
     
 </body>
-
 </html>

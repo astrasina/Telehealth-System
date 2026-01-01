@@ -1,29 +1,37 @@
-body {
-    background-color: black;
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
+  z-index: -10;
 }
 
 h1 {
-    font-family: Coiny;
+    font-family: Lalezar;
     text-align: center;
-    color: #f4ba7d;
-    font-size: 35px;
+    color: #E3E3E3;
+    font-size: 50px;
     text-transform: uppercase;
-    font-weight: bolder;
-    text-shadow: rgb(128, 122, 42) 2px 3px 30px;
-    margin-top: 0px;
+    text-shadow: #456882 2px 3px 30px;
     padding-top: 15px;
-    padding-bottom: 0%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 hr.solid {
-  border-top: 3px solid #f4ba7d;
+  border: 2px solid #E3E3E3;
+  margin-top: -30px;
 }
 
 #navbar {
-  background-color: #7b4105;
+  background-color: #1B3C53;
   position: sticky;
   top: 0;
-  z-index: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 #navbara {
@@ -38,10 +46,41 @@ hr.solid {
   text-decoration: none;
 }
 
+#dashboard:hover, #messages:hover, #home:hover, #appointment:hover, #menu:hover  {
+  color: #E3E3E3;
+  font-size: 25px;
+  animation: jello-vertical 0.7s both;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
 #dashboard {
   background-color: transparent;
   border: none;
-  color: #f4ba7d;
+  color: #E3E3E3;
   font-size: 20px;
   cursor: pointer;
 }
@@ -49,7 +88,7 @@ hr.solid {
 #messages {
   background-color: transparent;
   border: none;
-  color: #f4ba7d;
+  color: #E3E3E3;
   font-size: 20px;
   cursor: pointer;
 }
@@ -57,7 +96,7 @@ hr.solid {
 #home {
   background-color: transparent;
   border: none;
-  color: #f4ba7d;
+  color: #E3E3E3;
   font-size: 20px;
   cursor: pointer;
 }
@@ -65,7 +104,7 @@ hr.solid {
 #appointment {
   background-color: transparent;
   border: none;
-  color: #f4ba7d;
+  color: #E3E3E3;
   font-size: 20px;
   cursor: pointer;
 }
@@ -73,14 +112,14 @@ hr.solid {
 #menu {
   background-color: transparent;
   border: none;
-  color: #f4ba7d;
+  color: #E3E3E3;
   font-size: 20px;
   cursor: pointer;
 }
 
 #veterinarianmsg {
-    background-color: #7b4105;
-    color: white;
+    background-color: #1B3C53;
+    color: #E3E3E3;
     width: 75%;
     height: auto;
     padding: 15px;
