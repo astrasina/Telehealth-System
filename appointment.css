@@ -37,7 +37,7 @@ hr.solid {
 #navbara {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 260px;
   align-items: center;
   padding: 10px 15px;
 } 
@@ -48,8 +48,8 @@ hr.solid {
 
 #dashboard:hover, #messages:hover, #home:hover, #appointment:hover, #menu:hover  {
   color: #E3E3E3;
-  font-size: 25px;
-  animation: jello-vertical 0.7s both;
+  font-size: 35px;
+  animation: jello-vertical 0.7s;
 }
 
 @keyframes jello-vertical {
@@ -76,45 +76,102 @@ hr.solid {
   }
 }
 
-
 #dashboard {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #messages {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #home {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #appointment {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #menu {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
+}
+
+#appoint {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.appointment-form {
+  background-color: #E3E3E3;
+  padding: 40px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-right {
+  justify-content: space-between;
+}
+
+.form-group input,
+.form-group textarea {
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1B3C53;
+  color: #E3E3E3;
 }
 
 label {
@@ -124,33 +181,33 @@ label {
 }
 
 #patient_name {
-  height: 30px;
-  width: 350px;
+  height: 40px;
   border: none;
   border-radius: 15px;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px ;
   padding: 5px;
   background-color: #1B3C53;
   color: #E3E3E3;
 }
 
 #pet_name {
-  height: 30px;
-  width: 350px;
+  height: 40px;
   border: none;
   border-radius: 15px;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px ;
   padding: 5px;
   background-color: #1B3C53;
   color: #E3E3E3;
 }
 
 #specie_type {
-  height: 30px;
-  width: 350px;
+  height: 40px;
   border: none;
   border-radius: 15px;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px ;
   padding: 5px;
   background-color: #1B3C53;
   color: #E3E3E3;
@@ -158,35 +215,49 @@ label {
 
 #concern {
   height: 200px;
-  width: 350px;
   border: none;
   border-radius: 15px;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px ;
   padding: 5px;
   background-color: #1B3C53;
   color: #E3E3E3;
 }
 
-button {
+textarea {
+  height: 140px;
+  resize: none;
+}
+
+input[type = "text"],
+input[type = "date"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#payment {
   border: none;
   border-radius: 75px;
   box-sizing: border-box;
-  font-size: 24px;
+  outline: none;
+  font-size: 23px;
   width: 170px;
-  height: 50px;
-  color: #1B3C53;
-  font-weight: 900;
-  font-family: ;
-  background-color: #E3E3E3;
+  height: 55px;
+  color: #E3E3E3;
+  font-weight: 800;
+  background: linear-gradient(180deg, #456882 0%, #234C6A 50%, #1B3C53 100%);
+  box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #456882;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
   cursor: pointer;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-button:hover {
+#payment:hover {
  color: #E3E3E3;
  background-color: #1B3C53;
- box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+ box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
  transform: translateY(-2px);
 }

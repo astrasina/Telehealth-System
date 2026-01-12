@@ -37,7 +37,7 @@ hr.solid {
 #navbara {
   display: flex;
   justify-content: center;
-  gap: 150px;
+  gap: 260px;
   align-items: center;
   padding: 10px 15px;
 } 
@@ -48,8 +48,8 @@ hr.solid {
 
 #dashboard:hover, #messages:hover, #home:hover, #appointment:hover, #menu:hover  {
   color: #E3E3E3;
-  font-size: 25px;
-  animation: jello-vertical 0.7s both;
+  font-size: 35px;
+  animation: jello-vertical 0.7s;
 }
 
 @keyframes jello-vertical {
@@ -76,56 +76,88 @@ hr.solid {
   }
 }
 
-
 #dashboard {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #messages {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #home {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #appointment {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #menu {
   background-color: transparent;
   border: none;
   color: #E3E3E3;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
+    transition:
+    font-size 0.1s ease,
+    color 0.1s ease,
+    transform 0.1s ease;
 }
 
 #veterinarianmsg {
     background-color: #1B3C53;
     color: #E3E3E3;
-    width: 75%;
+    width: 990px;
     height: auto;
     padding: 15px;
     cursor: pointer;
     font-size: 24px;
-    margin: 100px;
     border-radius: 60px;
     border-style: none;
+    text-align: center;
+    margin-top: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transition-duration: 0.2s;
+}
+
+#veterinarianmsg:hover {
+  background-color: #E3E3E3;
+  color:#1B3C53;
+}
+
+#msgs { 
+  display: flex; 
+  justify-content: center; 
 }
