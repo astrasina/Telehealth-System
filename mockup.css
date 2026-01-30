@@ -14,7 +14,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
+  background: #E3E3E3;
   filter: brightness(0.95) blur(1px);
   z-index: -10;
 }
@@ -23,7 +23,7 @@ h1 {
     color: #1B3C53;
     font-family: Lalezar;
     text-transform: uppercase;
-    text-shadow: #456882 2px 3px 30px;
+    text-shadow: #456882 2px 2px 5px;
     font-size: 95px;
 }
 
@@ -127,9 +127,9 @@ h1 {
   margin: 0 auto;
   padding: 40px 30px;
   border-radius: 35px;
-  background: #E3E3E3;
-  box-shadow: 0 20px 50px #456882;
-  border: 10px solid #1B3C53;
+  background: radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
+  box-shadow: 0 15px 40px #456882;
+  border: 10px solid radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
 }
 
 button {
@@ -165,4 +165,8 @@ button:hover {
 button:active {
  box-shadow: none;
  transform: translateY(0);
+}
+
+input::placeholder {
+  opacity: 30%;
 }
