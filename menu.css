@@ -135,3 +135,8 @@ hr.solid {
     color 0.1s ease,
     transform 0.1s ease;
 }
+
+button:active {
+  font-size: 30px;
+  color: #1B3C53;
+}

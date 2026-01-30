@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: 100%;
   background: radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
+  filter: brightness(0.95) blur(1px);
   z-index: -10;
 }
 
@@ -88,33 +89,51 @@ h1 {
 }
 
 #login_email , #reg_email {
-  width: 175px;
+  width: 255px;
   height: 40px;
   padding: 0 5rem;
   border: 2px solid transparent;
   border-radius: 30px;
   outline: none;
   text-align: center;
-  background-color: #E3E3E3;
-  color: #456882;
+  background-color: #1B3C53;
+  box-shadow: #456882 0px 7px 7px -5px;
+  color: #E3E3E3;
   font-family: monospace;
 }
 
 #login_pass , #reg_pass {
-  width: 175px;
+  width: 255px;
   height: 40px;
   padding: 0 5rem;
   border: 2px solid transparent;
   border-radius: 30px;
   outline: none;
   text-align: center;
-  background-color: #E3E3E3;
-  color: #456882;
+  background-color: #1B3C53;
+  box-shadow: #456882 0px 7px 7px -5px;
+  color: #E3E3E3;
   font-family: monospace;
 }
 
+#login_pass::placeholder , #reg_pass::placeholder, #login_email::placeholder , #reg_email::placeholder {
+  color: #E3E3E3;
+  font-family: monospace;
+}
+
+.form {
+  max-width: 670px;
+  height: 305px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 35px;
+  background: #E3E3E3;
+  box-shadow: 0 20px 50px #456882;
+  border: 10px solid #1B3C53;
+}
+
 button {
- border: 3px solid #E3E3E3;
+ border: 5px solid #1B3C53;
  border-radius: 75px;
  box-sizing: border-box;
  color: #1B3C53;
@@ -123,7 +142,7 @@ button {
  display: inline-block;
  line-height: normal;
  margin: 0;
- min-width: 0;
+ width: 190px;
  outline: none;
  padding: 1em 2.3em;
  text-align: center;
