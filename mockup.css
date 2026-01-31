@@ -123,13 +123,26 @@ h1 {
 
 .form {
   max-width: 670px;
-  height: 305px;
+  height: 320px;
   margin: 0 auto;
   padding: 40px 30px;
   border-radius: 35px;
   background: radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
   box-shadow: 0 15px 40px #456882;
   border: 10px solid radial-gradient(125% 125% at 50% 10%, #E3E3E3 20%, #1B3C53 100%);
+}
+
+.form .forgot-password {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.form .forgot-password a {
+  font-size: 10px;
+  color: #1B3C53;
+  font-family: monospace;
+  text-decoration: underline;
 }
 
 button {
