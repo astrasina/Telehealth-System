@@ -123,7 +123,7 @@ h1 {
 
 .form {
   max-width: 670px;
-  height: 320px;
+  height: 375px;
   margin: 0 auto;
   padding: 40px 30px;
   border-radius: 35px;
@@ -143,6 +143,17 @@ h1 {
   color: #1B3C53;
   font-family: monospace;
   text-decoration: underline;
+}
+
+.form .or {
+  font-size: 15px;
+  color: #1B3C53;
+  font-family: monospace;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: -10px;
 }
 
 button {
@@ -182,4 +193,27 @@ button:active {
 
 input::placeholder {
   opacity: 30%;
+}
+
+.continue {
+  margin: 20px auto 0 auto;
+  width: 250px;
+  display: flex;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  gap: 12px;
+  color: #1B3C53;
+  background-color: none; 
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.continue:hover {
+  transform: scale(1.02);
 }
